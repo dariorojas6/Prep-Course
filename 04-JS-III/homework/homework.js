@@ -293,11 +293,10 @@ function continueStatement(numero) {
   // Tu código:
  var NuevoArray = []
  for(var i = 0; i < 10 ; i++){
+   if(i === 5) continue;
    numero = numero + 2
-   if(i === numero) continue;
-   else{
-     NuevoArray.push(numero)
-   }
+   NuevoArray.push(numero)
+   
  }
 return NuevoArray
 }
